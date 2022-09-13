@@ -21,7 +21,7 @@ public class AvatarUpdateCommand extends ListenerAdapter {
                 .setDescription("**Zmienił avatar** :arrow_right: :arrow_right:")
                 .setThumbnail(event.getNewAvatarUrl());
 
-        event.getJDA().getGuildChannelById(textChannelIdPlayground).getGuild().getDefaultChannel().asTextChannel().sendMessageEmbeds(builder.build()).queue();
+        event.getJDA().getGuildChannelById(textChannelId).getGuild().getDefaultChannel().asTextChannel().sendMessageEmbeds(builder.build()).queue();
     }
 
 }
