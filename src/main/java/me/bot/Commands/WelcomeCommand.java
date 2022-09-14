@@ -16,6 +16,12 @@ public class WelcomeCommand extends ListenerAdapter {
         Member member = event.getMember();
         User user = member.getUser();
         int memberCount = event.getGuild().getMemberCount();
+        
+        Role roleKlient = event.getGuild().getRoleById("667767640571379744");
+
+        assert roleKlient != null;
+        member.getGuild().addRoleToMember(user, roleKlient).queue();
+        
         EmbedBuilder builder = new EmbedBuilder()
                 .setColor(0xFF4A4A)
                 .setAuthor(event.getGuild().getName())
