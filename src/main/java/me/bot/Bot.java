@@ -31,8 +31,8 @@ public class Bot {
                         new PingCommand(),
                         new WelcomeCommand(),
                         new ByeCommand(),
-                        new AvatarUpdateCommand(),
-                        new CensorCommand()
+                        new AvatarUpdateCommand()
+                        // new CensorCommand()
                 )
                 .setActivity(Activity.watching("ciebie"))
                 .setStatus(OnlineStatus.DO_NOT_DISTURB)
